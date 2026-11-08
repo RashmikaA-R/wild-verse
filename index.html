@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILD VERSE | Explore Wildlife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>WILD VERSE</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#animals">Animals</a>
+            <a href="#birds">Birds</a>
+            <a href="#nature">Nature</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Discover The Beauty Of Wildlife</h2>
+            <p>Explore the amazing world of animals, birds and nature.</p>
+            <a href="#animals" class="hero-btn">Explore Wildlife</a>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Find Your Favourite Wildlife</h2>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="animalSearch"
+                placeholder="Search animals, birds, nature..."
+            >
+        </div>
+
+        <p id="searchMessage" class="search-message"></p>
+    </section>
+
+    <!-- Animals Section -->
+    <section class="wildlife-section" id="animals">
+        <h2 class="section-title">Wild Animals</h2>
+
+        <div class="card-container">
+
+            <div class="animal-card" data-name="lion">
+                <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=800" alt="Lion">
+                <h3>Lion</h3>
+                <p>The king of the jungle.</p>
+                <button class="details-btn">Read More</button>
+            </div>
+
+            <!-- Elephants Main Card -->
+            <div class="animal-card" data-name="elephants">
+                <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=800" alt="Elephants">
+                <h3>Elephants</h3>
+                <p>Explore the amazing world of elephants.</p>
+                <button class="details-btn">Read More</button>
+            </div>
+
+            <div class="animal-card" data-name="tiger">
+                <img src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=800" alt="Tiger">
+                <h3>Tiger</h3>
+                <p>A powerful wild cat.</p>
+                <button class="details-btn">Read More</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Birds Section -->
+    <section class="wildlife-section" id="birds">
+        <h2 class="section-title">Beautiful Birds</h2>
+
+        <div class="card-container">
+
+            <div class="bird-card" data-name="parrot">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Ara_ararauna_Luc_Viatour.jpg/960px-Ara_ararauna_Luc_Viatour.jpg" alt="Blue and Yellow Macaw">
+                <h3>Parrot</h3>
+                <p>A colourful and intelligent bird.</p>
+                <button class="details-btn">Read More</button>
+            </div>
+
+            <!-- Owl Card -->
+            <div class="bird-card" data-name="owl">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tyto_alba_tylluan_wen_detail.jpg" alt="Barn Owl">
+                <h3>Owl</h3>
+                <p>A mysterious night bird.</p>
+                <button class="details-btn">Read More</button>
+            </div>
+
+            <div class="bird-card" data-name="eagle">
+                <img src="https://images.unsplash.com/photo-1611689342806-0863700ce1e4?w=800" alt="Eagle">
+                <h3>Eagle</h3>
+                <p>A powerful bird of prey.</p>
+                <button class="details-btn">Read More</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Nature Section -->
+    <section class="wildlife-section" id="nature">
+        <h2 class="section-title">Beautiful Nature</h2>
+
+        <div class="card-container">
+
+            <div class="nature-card" data-name="forests">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800" alt="Forest">
+                <h3>Forests</h3>
+                <p>Home to countless living creatures.</p>
+                <button class="details-btn">Read More</button>
+            </div>
+
+            <div class="nature-card" data-name="mountains">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Mountains">
+                <h3>Mountains</h3>
+                <p>Beautiful natural landscapes.</p>
+                <button class="details-btn">Read More</button>
+            </div>
+
+            <div class="nature-card" data-name="waterfalls">
+                <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800" alt="Waterfall">
+                <h3>Waterfalls</h3>
+                <p>Nature's beautiful flowing water.</p>
+                <button class="details-btn">Read More</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About WILD VERSE</h2>
+        <p>
+            WILD VERSE is a wildlife information website created to
+            explore and learn about amazing animals, birds and nature.
+            Our mission is to increase awareness about wildlife and
+            the importance of protecting our natural environment.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: wildverse@gmail.com</p>
+        <p>Explore. Discover. Protect.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 WILD VERSE. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Wildlife Popup -->
+    <div class="animal-modal" id="animalModal">
+
+        <div class="modal-content">
+
+            <button class="close-modal" id="closeModal">&times;</button>
+
+            <img src="" alt="Wildlife Image" id="modalImage">
+
+            <h2 id="modalTitle"></h2>
+
+            <div id="modalDetails"></div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+
+        // Search Elements
+        const searchInput = document.getElementById("animalSearch");
+        const searchMessage = document.getElementById("searchMessage");
+
+        const animalModal = document.getElementById("animalModal");
+        const closeModal = document.getElementById("closeModal");
+
+        const allCards = document.querySelectorAll(
+            ".animal-card, .bird-card, .nature-card"
+        );
+
+        const sections = document.querySelectorAll(".wildlife-section");
+
+
+        // Wildlife Information
+        const animalDetails = {
+
+            // LION
+            lion: {
+                image: "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=800",
+                title: "Lion",
+                details: [
+                    ["Introduction", "Lions are large wild cats known for their strength and social behaviour.", "සිංහයා යනු ශක්තිය සහ සමාජශීලී හැසිරීම නිසා ප්‍රසිද්ධ විශාල වල් බළල් විශේෂයකි."],
+                    ["Scientific Name", "Panthera leo", "විද්‍යාත්මක නාමය: Panthera leo"],
+                    ["Physical Appearance", "Male lions usually have a large mane. They have strong legs, sharp claws and powerful teeth.", "පිරිමි සිංහයන්ට විශාල කේශරයක් ඇත. ඔවුන්ට ශක්තිමත් පාද, තියුණු නිය සහ බලවත් දත් ඇත."],
+                    ["Habitat", "Lions mainly live in African grasslands, savannas and open woodland areas.", "සිංහයන් ප්‍රධාන වශයෙන් අප්‍රිකාවේ තෘණ භූමි, සැවනා සහ විවෘත වනාන්තරවල ජීවත් වෙති."],
+                    ["Diet", "Lions are carnivores. They hunt animals such as zebras, antelopes and buffaloes.", "සිංහයන් මාංශ භක්ෂක සතුන්ය. ඔවුන් සීබ්‍රා, ඇන්ටිලෝප් සහ මී ගවයන් වැනි සතුන් දඩයම් කරති."],
+                    ["Behaviour", "Lions live in social groups called prides. They rest for many hours and hunt when necessary.", "සිංහයන් Pride ලෙස හඳුන්වන කණ්ඩායම්වල ජීවත් වෙති. ඔවුන් පැය ගණනාවක් විවේක ගන්නා අතර අවශ්‍ය විට දඩයම් කරති."],
+                    ["Lifespan", "Wild lions usually live around 10–15 years.", "වනයේ ජීවත් වන සිංහයන් සාමාන්‍යයෙන් අවුරුදු 10–15ක් පමණ ජීවත් වෙති."],
+                    ["Reproduction", "Female lions give birth to cubs after a pregnancy of about 110 days.", "ගැහැණු සිංහයන් දින 110ක් පමණ වූ ගර්භණී කාලයකින් පසු පැටවුන් බිහි කරති."],
+                    ["Interesting Facts", "A lion's roar can be heard from several kilometres away.", "සිංහයෙකුගේ ගර්ජනය කිලෝමීටර් කිහිපයක් දුරට ඇසිය හැකිය."],
+                    ["Conservation", "Lions face threats from habitat loss and human-wildlife conflict. Their conservation is important.", "වාසස්ථාන අහිමි වීම සහ මිනිසුන් සමඟ ඇතිවන ගැටුම් සිංහයන්ට තර්ජනයකි. ඔවුන් ආරක්ෂා කිරීම වැදගත්ය."]
+                ]
+            },
+
+
+            // AFRICAN ELEPHANT
+            "african elephant": {
+                image: "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=800",
+                title: "African Elephant",
+                details: [
+                    ["Introduction", "African elephants are the largest land animals in the world.", "අප්‍රිකානු අලියා ලෝකයේ විශාලතම ගොඩබිම් සත්වයා වේ."],
+                    ["Scientific Name", "Loxodonta africana", "විද්‍යාත්මක නාමය Loxodonta africana වේ."],
+                    ["Physical Appearance", "They have very large ears, long trunks and strong legs.", "ඔවුන්ට විශාල කන්, දිගු හොඬවැල් සහ ශක්තිමත් පාද ඇත."],
+                    ["Habitat", "They live in African savannas, forests and grasslands.", "ඔවුන් අප්‍රිකානු සැවනා, වනාන්තර සහ තෘණ භූමිවල ජීවත් වෙති."],
+                    ["Diet", "They eat grass, leaves, fruits and tree bark.", "ඔවුන් තණකොළ, කොළ, පලතුරු සහ ගස් පොතු ආහාරයට ගනිති."],
+                    ["Behaviour", "They live in family groups and communicate with each other.", "ඔවුන් පවුල් කණ්ඩායම්වල ජීවත් වන අතර එකිනෙකා සමඟ සන්නිවේදනය කරති."],
+                    ["Lifespan", "They can live for around 60 to 70 years.", "ඔවුන්ට අවුරුදු 60ත් 70ත් අතර කාලයක් ජීවත් විය හැකිය."],
+                    ["Reproduction", "Their pregnancy lasts about 22 months.", "ඔවුන්ගේ ගර්භණී කාලය මාස 22ක් පමණ වේ."],
+                    ["Interesting Facts", "African elephants have larger ears than Asian elephants.", "අප්‍රිකානු අලින්ට ආසියානු අලින්ට වඩා විශාල කන් ඇත."],
+                    ["Conservation", "They face threats from poaching and habitat loss.", "දඩයම් කිරීම සහ වාසස්ථාන අහිමි වීම ඔවුන්ට තර්ජනයකි."]
+                ]
+            },
+
+
+            // ASIAN ELEPHANT
+            "asian elephant": {
+                image: "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800",
+                title: "Asian Elephant",
+                details: [
+                    ["Introduction", "Asian elephants are intelligent and social animals found in South and Southeast Asia.", "ආසියානු අලින් දකුණු සහ අග්නිදිග ආසියාවේ ජීවත් වන බුද්ධිමත් සහ සමාජශීලී සතුන්ය."],
+                    ["Scientific Name", "Elephas maximus", "විද්‍යාත්මක නාමය Elephas maximus වේ."],
+                    ["Physical Appearance", "They have smaller ears, large bodies and long trunks.", "ඔවුන්ට සාපේක්ෂව කුඩා කන්, විශාල ශරීර සහ දිගු හොඬවැල් ඇත."],
+                    ["Habitat", "They live in forests and grasslands across South and Southeast Asia.", "ඔවුන් දකුණු සහ අග්නිදිග ආසියාවේ වනාන්තර සහ තෘණ භූමිවල ජීවත් වෙති."],
+                    ["Diet", "They eat grass, leaves, bark, fruits and roots.", "ඔවුන් තණකොළ, කොළ, පොතු, පලතුරු සහ මුල් ආහාරයට ගනිති."],
+                    ["Behaviour", "They live in family groups and communicate using sounds and body movements.", "ඔවුන් පවුල් කණ්ඩායම්වල ජීවත් වන අතර ශබ්ද සහ ශරීර චලනයන් මඟින් සන්නිවේදනය කරති."],
+                    ["Lifespan", "They can live for around 50 to 70 years.", "ඔවුන්ට අවුරුදු 50ත් 70ත් අතර කාලයක් ජීවත් විය හැකිය."],
+                    ["Reproduction", "Their pregnancy lasts about 22 months.", "ඔවුන්ගේ ගර්භණී කාලය මාස 22ක් පමණ වේ."],
+                    ["Interesting Facts", "Asian elephants have smaller ears than African elephants.", "ආසියානු අලින්ට අප්‍රිකානු අලින්ට වඩා කුඩා කන් ඇත."],
+                    ["Conservation", "They are threatened by habitat loss and human-elephant conflict.", "වාසස්ථාන අහිමි වීම සහ මිනිස්-අලි ගැටුම් නිසා ඔවුන් තර්ජනයට ලක්ව ඇත."]
+                ]
+            },
+
+
+            // TIGER
+            tiger: {
+                image: "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=800",
+                title: "Tiger",
+                details: [
+                    ["Introduction", "Tigers are powerful wild cats recognised by their orange coats and dark stripes.", "කොටියා යනු තැඹිලි පැහැති සම සහ කළු ඉරි නිසා හඳුනාගත හැකි බලවත් වල් බළල් විශේෂයකි."],
+                    ["Scientific Name", "Panthera tigris", "විද්‍යාත්මක නාමය: Panthera tigris"],
+                    ["Physical Appearance", "Tigers have muscular bodies, strong jaws, sharp claws and unique stripe patterns.", "කොටින්ට මාංශපේශී සහිත ශරීර, ශක්තිමත් හකු, තියුණු නිය සහ විශේෂ ඉරි රටා ඇත."],
+                    ["Habitat", "Tigers live in forests, grasslands and wetlands in parts of Asia.", "කොටින් ආසියාවේ සමහර ප්‍රදේශවල වනාන්තර, තෘණ භූමි සහ තෙත්බිම්වල ජීවත් වෙති."],
+                    ["Diet", "Tigers are carnivores and hunt deer, wild pigs and other animals.", "කොටින් මාංශ භක්ෂක සතුන් වන අතර මුවන්, වල් ඌරන් සහ වෙනත් සතුන් දඩයම් කරති."],
+                    ["Behaviour", "Tigers usually live alone and mark their territories.", "කොටින් සාමාන්‍යයෙන් තනිව ජීවත් වන අතර තමන්ගේ ප්‍රදේශ සලකුණු කරති."],
+                    ["Lifespan", "Wild tigers commonly live around 10–15 years.", "වනයේ ජීවත් වන කොටින් සාමාන්‍යයෙන් අවුරුදු 10–15ක් පමණ ජීවත් වෙති."],
+                    ["Reproduction", "A tigress gives birth to a litter of cubs after about 3.5 months.", "කොටි දෙනක් මාස තුනහමාරක් පමණ ගර්භණී කාලයකින් පසු පැටවුන් බිහි කරයි."],
+                    ["Interesting Facts", "Every tiger has a unique stripe pattern, similar to a human fingerprint.", "සෑම කොටියෙකුටම මිනිස් ඇඟිලි සලකුණක් මෙන් වෙනස් වූ ඉරි රටාවක් ඇත."],
+                    ["Conservation", "Tigers are endangered due to poaching, habitat loss and declining prey populations.", "දඩයම් කිරීම, වාසස්ථාන අහිමි වීම සහ ආහාර සතුන් අඩුවීම නිසා කොටින් තර්ජනයට ලක්ව ඇත."]
+                ]
+            },
+
+
+            // PARROT
+            parrot: {
+                image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=800",
+                title: "Parrot",
+                details: [
+                    ["Introduction", "Parrots are colourful birds known for their intelligence and ability to imitate sounds.", "ගිරවා යනු වර්ණවත් පිහාටු සහ බුද්ධිමත් හැසිරීම නිසා ප්‍රසිද්ධ පක්ෂියෙකි. සමහර ගිරවුන්ට ශබ්ද අනුකරණය කළ හැකිය."],
+                    ["Scientific Name", "Parrots belong to the order Psittaciformes.", "ගිරවුන් අයත් වන්නේ Psittaciformes නම් පක්ෂි ගෝත්‍රයටය."],
+                    ["Physical Appearance", "Parrots have curved beaks, strong feet and colourful feathers.", "ගිරවුන්ට වක්‍ර හොට, ශක්තිමත් පාද සහ වර්ණවත් පිහාටු ඇත."],
+                    ["Habitat", "Parrots live in tropical and subtropical forests, woodlands and some grasslands.", "ගිරවුන් නිවර්තන සහ උපනිවර්තන වනාන්තර, කැලෑ සහ සමහර තෘණ භූමිවල ජීවත් වෙති."],
+                    ["Diet", "Most parrots eat seeds, nuts, fruits, flowers and other plant material.", "බොහෝ ගිරවුන් බීජ, ඇට වර්ග, පලතුරු, මල් සහ ශාක කොටස් ආහාරයට ගනිති."],
+                    ["Behaviour", "Many parrots are social birds that communicate using calls and body movements.", "බොහෝ ගිරවුන් කණ්ඩායම් වශයෙන් ජීවත් වන අතර හඬ සහ ශරීර චලනයන් මඟින් සන්නිවේදනය කරති."],
+                    ["Lifespan", "Lifespan varies greatly by species. Some parrots can live for several decades.", "ගිරවුන්ගේ ආයු කාලය විශේෂය අනුව වෙනස් වේ. සමහර ගිරවුන්ට දශක කිහිපයක් ජීවත් විය හැකිය."],
+                    ["Reproduction", "Parrots usually lay eggs in tree cavities or other sheltered nesting places.", "ගිරවුන් සාමාන්‍යයෙන් ගස්වල කුහර හෝ ආරක්ෂිත ස්ථානවල බිත්තර දමති."],
+                    ["Interesting Facts", "Parrots use their strong beaks to crack hard seeds and climb.", "ගිරවුන් තම ශක්තිමත් හොට භාවිතා කර තද බීජ කැඩීමට සහ නැඟීමට උපකාර කරගනිති."],
+                    ["Conservation", "Some parrot species are threatened by illegal wildlife trade and habitat destruction.", "නීති විරෝධී සත්ව වෙළඳාම සහ වාසස්ථාන විනාශ වීම නිසා සමහර ගිරවුන් තර්ජනයට ලක්ව ඇත."]
+                ]
+            },
+
+
+            // OWL
+            owl: {
+                image: "https://commons.wikimedia.org/wiki/Special:FilePath/Barnowl.jpg",
+                title: "Owl",
+                details: [
+                    ["Introduction", "Owls are birds of prey famous for their large eyes and mostly nocturnal habits.", "බකමූණා යනු විශාල ඇස් සහ රාත්‍රී කාලයේ ක්‍රියාකාරී වීම නිසා ප්‍රසිද්ධ ගොදුරු අල්ලන පක්ෂියෙකි."],
+                    ["Scientific Name", "Owls belong to the order Strigiformes.", "බකමූණන් අයත් වන්නේ Strigiformes නම් පක්ෂි ගෝත්‍රයටය."],
+                    ["Physical Appearance", "Owls have forward-facing eyes, curved beaks, sharp talons and soft feathers.", "බකමූණන්ට ඉදිරිපසට යොමු වූ ඇස්, වක්‍ර හොට, තියුණු නිය සහ මෘදු පිහාටු ඇත."],
+                    ["Habitat", "Owls live in forests, grasslands, deserts and even some urban areas.", "බකමූණන් වනාන්තර, තෘණ භූමි, කාන්තාර සහ සමහර නාගරික ප්‍රදේශවල ජීවත් වෙති."],
+                    ["Diet", "Many owls eat rodents, insects and small birds.", "බොහෝ බකමූණන් මීයන්, කෘමීන් සහ කුඩා පක්ෂීන් ආහාරයට ගනිති."],
+                    ["Behaviour", "Many owl species hunt at night and use excellent hearing to locate prey.", "බොහෝ බකමූණු විශේෂ රාත්‍රියේ දඩයම් කරන අතර ගොදුරු සොයා ගැනීමට ඉතා හොඳ ශ්‍රවණ හැකියාවක් භාවිතා කරති."],
+                    ["Lifespan", "Lifespan differs depending on the owl species and living conditions.", "බකමූණන්ගේ ආයු කාලය විශේෂය සහ ජීවන තත්ත්වය අනුව වෙනස් වේ."],
+                    ["Reproduction", "Owls lay eggs in nests, tree holes or other sheltered places.", "බකමූණන් කූඩුවල, ගස් කුහරවල හෝ ආරක්ෂිත ස්ථානවල බිත්තර දමති."],
+                    ["Interesting Facts", "Many owls can fly very quietly because of the special structure of their feathers.", "පිහාටු වල විශේෂ සැකැස්ම නිසා බොහෝ බකමූණන්ට ඉතා නිහඬව පියාසර කළ හැකිය."],
+                    ["Conservation", "Some owl species face threats from habitat destruction and pesticides.", "වාසස්ථාන විනාශ වීම සහ කෘමිනාශක නිසා සමහර බකමූණු විශේෂ තර්ජනයට ලක්ව ඇත."]
+                ]
+            },
+
+
+            // EAGLE
+            eagle: {
+                image: "https://images.unsplash.com/photo-1611689342806-0863700ce1e4?w=800",
+                title: "Eagle",
+                details: [
+                    ["Introduction", "Eagles are large birds of prey known for their excellent eyesight and strong flight.", "රාජාලියා යනු ඉතා හොඳ පෙනීම සහ ශක්තිමත් පියාසර හැකියාව නිසා ප්‍රසිද්ධ විශාල ගොදුරු අල්ලන පක්ෂියෙකි."],
+                    ["Scientific Name", "Eagles belong to several genera within the family Accipitridae.", "රාජාලීන් Accipitridae පවුලට අයත් විවිධ ගණ කිහිපයකට අයත් වේ."],
+                    ["Physical Appearance", "Eagles have strong hooked beaks, powerful feet and sharp talons.", "රාජාලීන්ට ශක්තිමත් වක්‍ර හොට, බලවත් පාද සහ තියුණු නිය ඇත."],
+                    ["Habitat", "Eagles live in mountains, forests, wetlands and open landscapes.", "රාජාලීන් කඳුකර, වනාන්තර, තෙත්බිම් සහ විවෘත භූමිවල ජීවත් වෙති."],
+                    ["Diet", "Eagles eat fish, reptiles, birds and small mammals depending on their species.", "රාජාලීන්ගේ විශේෂය අනුව මාළු, උරගයන්, පක්ෂීන් සහ කුඩා ක්ෂීරපායී සතුන් ආහාරයට ගනිති."],
+                    ["Behaviour", "Many eagles are strong territorial birds and build large nests.", "බොහෝ රාජාලීන් තම ප්‍රදේශය ආරක්ෂා කරන අතර විශාල කූඩු සාදති."],
+                    ["Lifespan", "Many eagle species can live for several decades.", "බොහෝ රාජාලි විශේෂවලට දශක කිහිපයක් ජීවත් විය හැකිය."],
+                    ["Reproduction", "Eagles lay eggs in large nests, often built high in trees or on cliffs.", "රාජාලීන් සාමාන්‍යයෙන් උස ගස්වල හෝ ගල් කඳු මත සාදන විශාල කූඩුවල බිත්තර දමති."],
+                    ["Interesting Facts", "Eagles have excellent eyesight that helps them spot prey from far away.", "රාජාලීන්ට ඉතා හොඳ පෙනීමක් ඇති නිසා දුර සිටින ගොදුරු හඳුනාගත හැකිය."],
+                    ["Conservation", "Some eagle species are threatened by habitat loss, pollution and poisoning.", "වාසස්ථාන අහිමි වීම, දූෂණය සහ විෂ වීම නිසා සමහර රාජාලි විශේෂ තර්ජනයට ලක්ව ඇත."]
+                ]
+            },
+
+
+            // FORESTS
+            forests: {
+                image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800",
+                title: "Forests",
+                details: [
+                    ["Introduction", "Forests are ecosystems dominated by trees and support a huge variety of life.", "වනාන්තර යනු ගස් බහුල පරිසර පද්ධති වන අතර විශාල ජීවී විවිධත්වයකට නිවහන වේ."],
+                    ["Scientific Name", "Forests are ecosystems, not a single species, so they do not have one scientific name.", "වනාන්තර යනු පරිසර පද්ධතියක් බැවින් ඒවාට තනි විද්‍යාත්මක නාමයක් නොමැත."],
+                    ["Physical Appearance", "Forests contain trees, shrubs, plants, fungi and many other organisms.", "වනාන්තරවල ගස්, පඳුරු, ශාක, දිලීර සහ තවත් බොහෝ ජීවීන් සිටිති."],
+                    ["Habitat", "Forests occur in many parts of the world, from tropical regions to colder climates.", "නිවර්තන කලාපවල සිට ශීත දේශගුණික ප්‍රදේශ දක්වා ලෝකයේ බොහෝ තැන්වල වනාන්තර ඇත."],
+                    ["Diet", "Forests support many food chains. Plants produce food that supports herbivores and predators.", "වනාන්තර බොහෝ ආහාර දාමවලට සහාය වේ. ශාක නිපදවන ආහාර ශාක භක්ෂකයන්ට සහ විලෝපිකයන්ට උපකාරී වේ."],
+                    ["Behaviour", "Forest ecosystems change through seasons, rainfall, growth and natural cycles.", "ඍතු, වර්ෂාව, වර්ධනය සහ ස්වභාවික චක්‍ර අනුව වනාන්තර පරිසර පද්ධති වෙනස් වේ."],
+                    ["Lifespan", "Individual trees can live from a few years to hundreds or even thousands of years.", "එක් එක් ගස් වර්ගය අනුව ඒවාට අවුරුදු කිහිපයක සිට සිය ගණනක් හෝ දහස් ගණනක් දක්වා ජීවත් විය හැකිය."],
+                    ["Reproduction", "Trees reproduce through seeds, fruits, cones or other methods depending on the species.", "ගස් විශේෂය අනුව බීජ, පලතුරු, කේතු හෝ වෙනත් ක්‍රම මඟින් ප්‍රජනනය කරති."],
+                    ["Interesting Facts", "Forests store carbon, protect soil and help regulate the water cycle.", "වනාන්තර කාබන් ගබඩා කරයි, පස ආරක්ෂා කරයි සහ ජල චක්‍රය පාලනය කිරීමට උපකාරී වේ."],
+                    ["Conservation", "Deforestation, fires and pollution threaten forests. Sustainable protection is essential.", "වන විනාශය, ගිනි ගැනීම් සහ දූෂණය වනාන්තරවලට තර්ජනයකි. ඒවා තිරසාර ලෙස ආරක්ෂා කිරීම අත්‍යවශ්‍ය වේ."]
+                ]
+            },
+
+
+            // MOUNTAINS
+            mountains: {
+                image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
+                title: "Mountains",
+                details: [
+                    ["Introduction", "Mountains are high natural landforms that often support unique ecosystems.", "කඳු යනු උසින් වැඩි ස්වභාවික භූ ආකෘති වන අතර ඒවායේ විශේෂ පරිසර පද්ධති පවතී."],
+                    ["Scientific Name", "Mountains are landforms and do not have one scientific name.", "කඳු යනු භූ ආකෘති බැවින් ඒවාට තනි විද්‍යාත්මක නාමයක් නොමැත."],
+                    ["Physical Appearance", "Mountains have high peaks, steep slopes, valleys and rocky surfaces.", "කඳුවල උස් මුදුන්, බෑවුම්, නිම්න සහ ගල් සහිත මතුපිට ඇත."],
+                    ["Habitat", "Mountain environments are found on every continent and vary with altitude and climate.", "සෑම මහද්වීපයකම කඳුකර පරිසර ඇත. උස සහ දේශගුණය අනුව ඒවා වෙනස් වේ."],
+                    ["Diet", "Mountain ecosystems support plants and animals that form different food chains.", "කඳුකර පරිසරවල ශාක සහ සතුන් ජීවත් වන අතර ඒවා විවිධ ආහාර දාම සාදයි."],
+                    ["Behaviour", "Wildlife in mountains adapts to cold, steep terrain and changing weather.", "කඳුකරයේ වන සතුන් සීතල, බෑවුම් සහිත භූමිය සහ වෙනස් වන කාලගුණයට අනුවර්තනය වෙති."],
+                    ["Lifespan", "Lifespan depends on the individual plant or animal species living in the mountains.", "කඳුකරයේ ජීවත් වන එක් එක් ශාක හා සත්ව විශේෂය අනුව ආයු කාලය වෙනස් වේ."],
+                    ["Reproduction", "Mountain plants and animals reproduce in different ways depending on their species.", "කඳුකර ශාක සහ සතුන් තම විශේෂය අනුව විවිධ ක්‍රමවලින් ප්‍රජනනය කරති."],
+                    ["Interesting Facts", "Mountains influence weather patterns and provide water to many rivers.", "කඳු කාලගුණ රටාවන්ට බලපාන අතර බොහෝ ගංගාවලට ජලය සපයයි."],
+                    ["Conservation", "Climate change, mining and habitat disturbance threaten many mountain ecosystems.", "දේශගුණික විපර්යාස, පතල් කැණීම සහ වාසස්ථාන බාධා කිරීම් කඳුකර පරිසරවලට තර්ජනයකි."]
+                ]
+            },
+
+
+            // WATERFALLS
+            waterfalls: {
+                image: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800",
+                title: "Waterfalls",
+                details: [
+                    ["Introduction", "A waterfall forms when water flows over a steep drop in a river or stream.", "ගඟක හෝ දිය පහරක ජලය උස බෑවුමකින් පහළට වැටෙන විට දිය ඇල්ලක් නිර්මාණය වේ."],
+                    ["Scientific Name", "Waterfalls are natural landforms and do not have a scientific species name.", "දිය ඇලි ස්වභාවික භූ ආකෘති බැවින් ඒවාට ජීව විද්‍යාත්මක විද්‍යාත්මක නාමයක් නොමැත."],
+                    ["Physical Appearance", "Waterfalls may have one large drop, several smaller steps or wide flowing water.", "දිය ඇලිවල එක් විශාල ජල වැටීමක්, කුඩා පියවර කිහිපයක් හෝ පළල් ජල ප්‍රවාහයක් තිබිය හැකිය."],
+                    ["Habitat", "Waterfalls occur in many environments, especially where rivers cross steep or rocky land.", "ගංගා උස් හෝ ගල් සහිත භූමි හරහා ගලා යන බොහෝ පරිසරවල දිය ඇලි ඇති වේ."],
+                    ["Diet", "Waterfalls do not eat. Their surrounding ecosystems support fish, plants and other wildlife.", "දිය ඇලි ආහාර ගන්නේ නැත. ඒ අවට පරිසර පද්ධති මසුන්, ශාක සහ වෙනත් වන සතුන්ට සහාය වේ."],
+                    ["Behaviour", "Water flows continuously or seasonally depending on rainfall and the river source.", "වර්ෂාව සහ ගඟේ ජල මූලාශ්‍රය අනුව ජලය අඛණ්ඩව හෝ ඍතු අනුව ගලා යයි."],
+                    ["Lifespan", "A waterfall can remain for thousands of years, but erosion can slowly change its shape.", "දිය ඇල්ලක් වසර දහස් ගණනක් පැවතිය හැකි නමුත් ඛාදනය නිසා එහි හැඩය සෙමින් වෙනස් විය හැකිය."],
+                    ["Reproduction", "Waterfalls do not reproduce. The plants and animals around them reproduce naturally.", "දිය ඇලි ප්‍රජනනය නොකරයි. ඒ අවට ජීවත් වන ශාක සහ සතුන් ස්වභාවිකව ප්‍රජනනය කරති."],
+                    ["Interesting Facts", "Waterfalls can create mist and support special habitats for moisture-loving plants.", "දිය ඇලි මඟින් ජල වාෂ්ප සහිත පරිසරයක් නිර්මාණය කර තෙතමනයට කැමති ශාකවලට උපකාරී වේ."],
+                    ["Conservation", "Pollution, excessive development and water extraction can damage waterfall ecosystems.", "දූෂණය, අධික සංවර්ධනය සහ ජලය අධික ලෙස ලබා ගැනීම දිය ඇලි පරිසර පද්ධතිවලට හානි කළ හැකිය."]
+                ]
+            }
+
+        };
+
+
+        // Search Function
+        searchInput.addEventListener("input", function () {
+
+            const searchValue = this.value.toLowerCase().trim();
+
+            let visibleCount = 0;
+
+            allCards.forEach(function (card) {
+
+                const cardName = card.dataset.name.toLowerCase();
+                const cardText = card.innerText.toLowerCase();
+
+                const matches =
+                    cardName.includes(searchValue) ||
+                    cardText.includes(searchValue);
+
+                card.style.display = matches ? "block" : "none";
+
+                if (matches) {
+                    visibleCount++;
+                }
+
+            });
+
+            sections.forEach(function (section) {
+
+                const cards = section.querySelectorAll(
+                    ".animal-card, .bird-card, .nature-card"
+                );
+
+                const visibleCards = Array.from(cards).filter(function (card) {
+                    return card.style.display !== "none";
+                });
+
+                section.style.display =
+                    visibleCards.length > 0 ? "block" : "none";
+
+            });
+
+            if (searchValue === "") {
+                searchMessage.textContent = "";
+            } else if (visibleCount === 0) {
+                searchMessage.textContent =
+                    "No wildlife found. Try another name.";
+            } else {
+                searchMessage.textContent =
+                    visibleCount + " wildlife result(s) found.";
+            }
+
+        });
+
+
+        // Show Animal Details Function
+        function showAnimalDetails(animal) {
+
+            document.getElementById("modalImage").src = animal.image;
+
+            document.getElementById("modalTitle").textContent =
+                animal.title;
+
+            const modalDetails =
+                document.getElementById("modalDetails");
+
+            modalDetails.innerHTML = "";
+
+            animal.details.forEach(function (detail) {
+
+                const section = document.createElement("div");
+
+                section.className = "detail-section";
+
+                section.innerHTML = `
+                    <h3>${detail[0]}</h3>
+                    <p>${detail[1]}</p>
+                    <p class="sinhala-detail">${detail[2]}</p>
+                `;
+
+                modalDetails.appendChild(section);
+
+            });
+
+        }
+
+
+        // Main Card Click Function
+        allCards.forEach(function (card) {
+
+            card.addEventListener("click", function () {
+
+                const name = card.dataset.name.toLowerCase();
+
+                // Elephants Main Popup
+                if (name === "elephants") {
+
+                    document.getElementById("modalImage").src =
+                        "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=800";
+
+                    document.getElementById("modalTitle").textContent =
+                        "Elephants";
+
+                    const modalDetails =
+                        document.getElementById("modalDetails");
+
+                    modalDetails.innerHTML = `
+                        <div class="card-container">
+
+                            <div class="animal-card">
+                                <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=800" alt="African Elephant">
+                                <h3>African Elephant</h3>
+                                <p>The largest land animal in Africa.</p>
+                                <button class="details-btn" data-elephant="african elephant">
+                                    Read More
+                                </button>
+                            </div>
+
+                            <div class="animal-card">
+                                <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800" alt="Asian Elephant">
+                                <h3>Asian Elephant</h3>
+                                <p>An intelligent elephant found in Asia.</p>
+                                <button class="details-btn" data-elephant="asian elephant">
+                                    Read More
+                                </button>
+                            </div>
+
+                        </div>
+                    `;
+
+                    animalModal.style.display = "flex";
+
+                    return;
+                }
+
+                // Other Wildlife Details
+                const animal = animalDetails[name];
+
+                if (!animal) return;
+
+                showAnimalDetails(animal);
+
+                animalModal.style.display = "flex";
+
+            });
+
+        });
+
+
+        // African and Asian Elephant Read More
+        document.getElementById("modalDetails").addEventListener(
+            "click",
+            function (event) {
+
+                const button = event.target.closest("[data-elephant]");
+
+                if (!button) return;
+
+                const name = button.dataset.elephant;
+
+                const animal = animalDetails[name];
+
+                if (!animal) return;
+
+                showAnimalDetails(animal);
+
+            }
+        );
+
+
+        // Close Popup
+        closeModal.addEventListener("click", function () {
+
+            animalModal.style.display = "none";
+
+        });
+
+
+        // Close Popup When Clicking Outside
+        animalModal.addEventListener("click", function (event) {
+
+            if (event.target === animalModal) {
+                animalModal.style.display = "none";
+            }
+
+        });
+
+
+        // Close Popup Using Escape Key
+        document.addEventListener("keydown", function (event) {
+
+            if (event.key === "Escape") {
+                animalModal.style.display = "none";
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
